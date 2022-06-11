@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Responsive Resume using CSS grid
+        </title>
+        <meta name="viewport" content=
+        "width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<style>
+            .main-content{
+                display:grid;
+               
+                grid-template-columns: 300px 700px;
+                height: 1000px;
+                border: 1px solid blue;
+            }
+            .left-section{
+                background-color: aqua;
+            }
+            .right-section{
+                background-color: cadetblue;
+            }
+            .profile-image{
+                display: block;
+                margin: auto;
+                border: 5px solid white;
+                border-radius: 30%;
+                width: 60%;
+            }
+            .profile-name{
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 0.02px;
+                padding: 0.8rem;
+            }
+            .designation{
+                font-size: 1rem;
+                text-align: center;
+                text-transform: uppercase;
+                padding-bottom: 0.5rem;
+                border-bottom: solid;
+            }
+            .fon{
+                list-style-type: square;
+            }
+            .description{
+                font-size: 0.75rem;
+                text-align: center;
+                padding: 1rem;
+                
+            }
+            .icon{
+                display: flex;
+                justify-content: center;
+            }
+            .fa-linkedin{
+                background: blue;
+                color: white;
+            }
+            .fa-github{
+                background: cornflowerblue;
+                color: white;
+            }
+            .fa{
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 20px;
+            text-align: center;
+            width: 30px;
+            text-decoration: none;
+            margin: 3px 20px;
+        }
+        .skills{
+            font-size: 0.75rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1rem 0.5rem;
+        }
+        .skill-name{
+            font-size: 0.65rem;
+            font-weight: 0.65rem;
+            text-align: left;
+            padding-bottom: 0.5rem;
+        }
+        .progress-bar{
+            border: 1px solid white;
+            height: 4px;
+            background: blue;
+        }
+        .right-title{
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 0.5rem;
+            letter-spacing: 1px;
+        }
+        @media screen and (max-width: 700px) {
+           .main-content{
+               grid-template-columns: 100%;
+           } 
+        }
+      
+
+        </style>
+    </head>
+    <body>
+        <div class="main-content  ">
+            <section class="left-section ">
+                <div class="left-content" style="padding: 1rem;">
+                    <div class="profile-details ">
+                        <img class="profile-image" src="profile.jpg">
+                        <div class="profile-name">Siddartha M S</div>
+                        <div class="designation">SDE-1</div>
+                        <div class="description">Full Stack Software Developer</div>
+                    </div>
+                    
+                    <div class="contact-item ">
+                       
+                        <div class="icon" > 
+                            <div><a href="https://www.linkedin.com/in/siddartha-ms-113906228/" class="fa fa-linkedin"></a></div>
+                            <div><a href="https://github.com/siddartha-ms" class="fa fa-github"></a></div>
+                        </div><br>
+                        <div class="fon"><li>siddarthams123@gmail.com</li><br>
+                            <li>8660884368</li><br>
+                            <li>Chitradurga, Karnataka - 577501</li><br>
+                        </div><br>
+                        <div class="skills" ><b>Skills</b><br><br>
+                            <div class="skill-name">HTML
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div><br>
+                            <div class="skill-name">CSS
+                                <div class="progress-bar" style="width: 70%;"></div>
+                            </div><br>
+                            <div class="skill-name">JS
+                                <div class="progress-bar" style="width: 40%;"></div>
+                            </div><br>
+                            <div class="skill-name">JAVA
+                                <div class="progress-bar" style="width: 60%;"></div>
+                            </div><br>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="right-section">
+                <div class="right-main-content" style="padding: 2rem 3rem;">
+                <div class="right-title">about me</div>
+                <div>Aspiring to become a software professional, with making all efforts to gather knowledge
+                    and focussing on personality development. 
+                </div><br><br><br>
+                
+                <div class="right-title">education</div><br>
+                    <div>
+                        <strong>Oxford College of Engg, Banglore</strong><br>
+                        <div>Graduated in Electronics and Communication Engg -  2011</div>
+                    </div><br>
+                    <div>
+                        <strong>Rural Polytechnic, Haveri</strong><br>
+                        <div>Graduated in Electronics and Communication Diploma -  2007</div>
+                    </div><br><br><br>
+                
+                <div class="right-title">experience</div><br>
+                    <div><strong>Chetan Agro and Foods Packaging</strong> 
+                    <div>Designated as supervisor for a period of 3 years got so much knowledge regarding maintenance part.
+                        Knowledge regarding branding product, its marketing and distribution.
+                    </div>
+                    </div><br>
+                    <div><strong>Sinsil International</strong> 
+                        <div>Designated as sales and service engg for a period of 3 years, got to know about some of research instruments
+                            and met so many educated professors and graduates. </div>
+                        </div><br>
+                        <div><strong>Essae Digitronics pvt ltd</strong> 
+                            <div>Designated as service engg for a period of 2 years, this given me good knowledge about weighing scales.
+                                Learn multitasking, visited so many reputed companies and installed our machines ans given service, helped in personality development.
+                            </div>
+                            </div>
+
+                
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
